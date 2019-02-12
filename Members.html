@@ -22,42 +22,53 @@
         }
 
         body {
-            background-image: url("HTML/rift.jpg"), url("HTML/img.jpg");
+            background-image: url("HTML/img2.jpg");
             background-repeat: no-repeat, no-repeat;
-            background-position: center;
-            position: relative;
             width: 100%;
 
 
 
+
         }
 
-        .hpage {
+        .background-img {
+            width: 1200px;
+            height: 87%;
+            position: relative;
+            background-image: url("HTML/rift.jpg");
+            margin-top: -300px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            float: right;
+
+        }
+
+        .imgcontainer {
             height: 135px;
             margin: auto;
             width: 130px;
             position: relative;
-            background-color:#001da0;
+            background-color: #141010;
 
         }
 
-
-        img {
+        .img1 {
             position: relative;
-
             width: 130px;
             height: 135px;
             background-position: 50% 50%;
-            border: 3px solid rgb(0, 0, 0);
+            border: 1px solid rgb(151, 150, 150);
             border-radius: 4px;
             padding: 5px;
 
+
         }
 
-        img:hover {
-            box-shadow: 0 0 4px 4px rgba(131, 0, 0, 0.788);
+        .img1:hover {
+            box-shadow: 0 0 4px 4px rgba(184, 184, 184, 0.788);
         }
-        a:hover{
+
+        a:hover {
             color: rgba(219, 87, 64, 0.8);
         }
 
@@ -66,31 +77,100 @@
         /* Add a gray background color and some padding to the footer */
         footer {
             background-color: #2b2b2b;
-            padding: 10px;
+            padding: 32px;
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
+        }
 
-        }
-        p{
-            font-family:Arial, Helvetica, sans-serif;
-            font-size: 16px;
-            font-weight: bold;
-            color:rgba(4, 0, 255, 0.932);
+        .card {
+            background-color: rgba(0, 0, 0, 0.897);
+            float: left;
+            box-shadow: 0 4px 8px 5px;
+            width: 175px;
+            margin: auto;
             text-align: center;
-            text-shadow:2px 2px 5px rgba(0, 0, 0, 0.514);
+            font-family: arial;
+            border: 3px solid rgba(150, 149, 149, 0.959);
+            position: relative;
+            left: 4%;
+            height:280px;
         }
+
+        .title {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            margin: auto;
+        }
+
+        button {
+            position: relative;
+            border: none;
+            outline:0;
+            display: inline-block;
+            padding: 3px;
+            color: white;
+            background-color: rgb(100, 100, 100);
+            text-align: center;
+            cursor: pointer;
+            width: 80%;
+            font-size: 12px;
+           
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: bolder;
+            color: rgb(247, 247, 247);
+            text-align: center;
+            text-shadow: 2px 2px 2px rgba(15, 15, 15, 0.568);
+            text-justify:inter-word;
+        }
+
         /* Add background color on p elements
        <!-- p:hover{
             color: rgba(219, 87, 64, 0.8);
         }*/
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(15, 15, 15, 0.568);
+            margin: 10px;
+        }
 
+        .cardsetbot {
+            position: relative;
+            left: -673px;
+            top: 400px;
+
+        }
+
+        .imgcard{
+            position: relative;
+            width: 130px;
+            height: 110px;
+            background-position: 50% 50%;
+        }
     </style>
 
 </head>
 
 <body>
+
 
     <nav class="navbar navbar-inverse navbarclr">
         <div class="container-fluid">
@@ -106,41 +186,92 @@
         </div>
     </nav>
 
-    <!--jason image-->
-    <div style="left:13%; top:71%;" class="hpage">
-        <a href=" "><img src="HTML/jason.jpg" alt="jason" ></a>
-            <p>Support <br>Jason Pavlakis</p>
-        
+    <div class="card" style="left:20px;">
+        <img class="imgcard" src="/HTML/me.JPG" alt="John" style="width:55%;">
+        <h3>Necr0 <br> <br></h3>
+        <p class="title">Toplane</p>
+        <p>Ioannis Christodoulakos</p>
+        <p><button>View Profile</button></p>
+    </div>
+    <div class="card" style="margin-left: 20px;">
+        <img class="imgcard" src="/HTML/mat.jpg" alt="Mat" style="width:55%;">
+        <h3>Matkaps23 <br> <br></h3>
+        <p class="title">Jungle</p>
+        <p>Mathaios Kapsalos</p>
+        <p><button>View Profile</button></p>
+
+
+    </div>
+    <div class="card" style="margin-left:75px;">
+        <img class="imgcard" src="/HTML/antonis.jpg" alt="Antonis" style="width:55%;">
+        <h3>Ωραια <br> <br></h3>
+        <p class="title">Mid</p>
+        <p>Antonios Parlapanis</p>
+        <p><button>View Profile</button></p>
+    </div>
+    <div class="card cardsetbot" style="margin-left:75px;">
+        <img class="imgcard" src="/HTML/ntiri.JPG" alt="ntiri" style="width:55%;">
+        <h3 style="font-size:165%">Magaiver007 <br> <br></h3>
+        <p class="title">Mid</p>
+        <p>Nikolaos Mpousis</p>
+        <p><button>View Profile</button></p>
+    </div>
+    <div class="card cardsetbot" style="margin-left:75px;">
+        <img class="imgcard" src="/HTML/jason.JPG" alt="jason" style="width:55%;">
+        <h3 style="font-size:165%;">The Untamable</h3>
+        <p class="title">Support</p>
+        <p>Jason Pavlakis</p>
+        <p><button>View Profile</button></p>
+    </div>
+    <div class="card cardsetbot" style="margin-left:75px;">
+        <img class="imgcard" src="/HTML/giannos.jpg" alt="John" style="max-width:55%;">
+        <h3>Captain Giannos</h3>
+        <p class="title">AD Carry</p>
+        <p>Ioannis Charalampous</p>
+        <p><button>View Profile</button></p>
     </div>
 
-    <!-- Giannos image-->
-    <div style="left:20%; top:45%;" class="hpage">
-        <a href=""> <img src="HTML/giannos.jpg" alt="giannos"></a>
-        <p>AD Carry <br>Ioannis Charalampous</p>
-    </div>
 
-    <!--Antonis image-->
-    <div style="left:-5%; top:8%;" class="hpage">
-        <a href=""><img src="HTML/antonis.jpg" alt="Antonis"></a>
-        <p>Mid <br>Antonios Parlapanis</p>
-    </div>
+    <div class="background-img">
+        <!--jason image-->
+        <div style="left:16%; top:79%;" class="imgcontainer">
+            <a href=" "><img src="HTML/jason.jpg" alt="jason" class="img1"></a>
 
-    <!--Mpousis image-->
-    <div style="left:3%; top:-6%;" class="hpage">
-      <a href=""><img src="HTML/ntiri.JPG" alt="Ntiri"></a>
-        <p>Mid <br>Nikolaos Mpousis</p>
-    </div>
+        </div>
 
-    <!--Mat image-->
-    <div style="left:-15%; top:-30%;" class="hpage">
-        <a href=""><img src="HTML/mat.JPG" alt="Mat"></a>
-        <p>Jungle <br> Mathaios Kapsalos</p>
+        <!-- Giannos image-->
+        <div style="left:30%; top:50%;" class="imgcontainer">
+            <a href=""> <img src="HTML/giannos.jpg" alt="giannos" class="img1"></a>
+
+        </div>
+
+        <!--Antonis image-->
+        <div style="left:-5%; top:8%;" class="imgcontainer">
+            <a href=""><img src="HTML/antonis.jpg" alt="Antonis" class="img1"></a>
+
+        </div>
+
+        <!--Mpousis image-->
+        <div style="left:7%; top:-8.1%;" class="imgcontainer">
+            <a href=""><img src="HTML/ntiri.JPG" alt="Ntiri" class="img1"></a>
+
+        </div>
+
+        <!--Mat image-->
+        <div style="left:-20%; top:-20%;" class="imgcontainer">
+            <a href=""><img src="HTML/mat.JPG" alt="Mat" class="img1"></a>
+
+
+        </div>
+        <!--John image-->
+        <div style="left:-29%; top:-70%;" class="imgcontainer ">
+            <a href=""><img src="HTML/me.JPG" alt="Giannis" class="img1"></a>
+
+        </div>
     </div>
-    <!--John image-->
-    <div style="left:-20%; top:-70%;" class="hpage">
-        <a href=""><img src="HTML/me.JPG" alt="Giannis"></a>
-        <p>Toplane <br>Ioannis Christodoulakos</p>
-    </div>
+    <footer>
+        <p></p>
+    </footer>
 
 
 </body>
