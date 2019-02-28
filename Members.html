@@ -22,8 +22,7 @@
         }
 
         body {
-            background-image: url("HTML/img2.jpg");
-            background-repeat: no-repeat, no-repeat;
+
             width: 100%;
 
 
@@ -31,15 +30,26 @@
 
         }
 
+        .backimg2 {
+            width: 1200px;
+            background-image: url("HTML/img2.jpg");
+            background-repeat: no-repeat, no-repeat;
+            float: left;
+            height: 90%;
+            margin-top: -20px;
+
+        }
+
         .background-img {
             width: 1200px;
-            height: 87%;
-            position: relative;
+            height: 99%;
             background-image: url("HTML/rift.jpg");
-            margin-top: -300px;
+            margin-top: -888px;
             background-repeat: no-repeat;
-            background-position: 50% 50%;
             float: right;
+            position: relative;
+            left: 58.5%;
+            top: 37.45%;
 
         }
 
@@ -95,7 +105,7 @@
             border: 3px solid rgba(150, 149, 149, 0.959);
             position: relative;
             left: 4%;
-            height:280px;
+            height: 280px;
         }
 
         .title {
@@ -107,7 +117,7 @@
         button {
             position: relative;
             border: none;
-            outline:0;
+            outline: 0;
             display: inline-block;
             padding: 3px;
             color: white;
@@ -116,12 +126,12 @@
             cursor: pointer;
             width: 80%;
             font-size: 12px;
-           
+
         }
 
-        a {
+         a{
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
             color: black;
         }
 
@@ -137,7 +147,7 @@
             color: rgb(247, 247, 247);
             text-align: center;
             text-shadow: 2px 2px 2px rgba(15, 15, 15, 0.568);
-            text-justify:inter-word;
+            text-justify: inter-word;
         }
 
         /* Add background color on p elements
@@ -159,7 +169,7 @@
 
         }
 
-        .imgcard{
+        .imgcard {
             position: relative;
             width: 130px;
             height: 110px;
@@ -186,91 +196,108 @@
         </div>
     </nav>
 
-    <div class="card" style="left:20px;">
-        <img  src="HTML/me.JPG" alt="john" style="width:55%;" class="imgcard">
-        <h3>Necr0 <br> <br></h3>
-        <p class="title">Toplane</p>
-        <p>Ioannis Christodoulakos</p>
-        <a href="john.html"><p><button>View Profile</button></p></a>
-    </div>
-    <div class="card" style="margin-left: 20px;">
-        <img  src="HTML/mat.jpg" alt="Mat" style="width:55%;" class="imgcard">
-        <h3>Matkaps23 <br> <br></h3>
-        <p class="title">Jungle</p>
-        <p>Mathaios Kapsalos</p>
-        <p><button>View Profile</button></p>
-
-
-    </div>
-    <div class="card" style="margin-left:75px;">
-        <img  src="HTML/antonis.jpg" alt="Antonis" style="width:55%;" class="imgcard">
-        <h3>Ωραια <br> <br></h3>
-        <p class="title">Mid</p>
-        <p>Antonios Parlapanis</p>
-        <p><button>View Profile</button></p>
-    </div>
-    <div class="card cardsetbot" style="margin-left:75px;">
-        <img  src="HTML/ntiri.jpg" alt="Ntiri" style="width:55%;" class="imgcard">
-        <h3 style="font-size:165%">Magaiver007 <br> <br></h3>
-        <p class="title">Mid</p>
-        <p>Nikolaos Mpousis</p>
-        <p><button>View Profile</button></p>
-    </div>
-    <div class="card cardsetbot" style="margin-left:75px;">
-        <img  src="HTML/jason.jpg" alt="jason" style="width:55%;" class="imgcard">
-        <h3 style="font-size:165%;">The Untamable</h3>
-        <p class="title">Support</p>
-        <p>Jason Pavlakis</p>
-        <p><button>View Profile</button></p>
-    </div>
-    <div class="card cardsetbot" style="margin-left:75px;">
-        <img  src="HTML/giannos.jpg" alt="Giannos" style="width:55%;" class="imgcard">
-        <h3>Captain Giannos</h3>
-        <p class="title">AD Carry</p>
-        <p>Ioannis Charalampous</p>
-        <p><button>View Profile</button></p>
-    </div>
-
-
-    <div class="background-img">
-        <!--jason image-->
-        <div style="left:16%; top:79%;" class="imgcontainer">
-            <a href=" "><img src="HTML/jason.jpg" alt="jason" class="img1"></a>
-
+    <div class="backimg2">
+        <div class="card" style="left:20px;">
+            <img src="HTML/me.JPG" alt="john" style="width:55%;" class="imgcard">
+            <h3>Necr0 <br> <br></h3>
+            <p class="title">Toplane</p>
+            <p>Ioannis Christodoulakos</p>
+            <a href="john.html">
+                <p><button>View Profile</button></p>
+            </a>
         </div>
-
-        <!-- Giannos image-->
-        <div style="left:30%; top:50%;" class="imgcontainer">
-            <a href=""> <img src="HTML/giannos.jpg" alt="giannos" class="img1"></a>
-
-        </div>
-
-        <!--Antonis image-->
-        <div style="left:-5%; top:8%;" class="imgcontainer">
-            <a href=""><img src="HTML/antonis.jpg" alt="Antonis" class="img1"></a>
-
-        </div>
-
-        <!--Mpousis image-->
-        <div style="left:7%; top:-8.1%;" class="imgcontainer">
-            <a href=""><img src="HTML/ntiri.JPG" alt="Ntiri" class="img1"></a>
-
-        </div>
-
-        <!--Mat image-->
-        <div style="left:-20%; top:-20%;" class="imgcontainer">
-            <a href=""><img src="HTML/mat.JPG" alt="Mat" class="img1"></a>
+        <div class="card" style="margin-left: 20px;">
+            <img src="HTML/mat.jpg" alt="Mat" style="width:55%;" class="imgcard">
+            <h3>Matkaps23 <br> <br></h3>
+            <p class="title">Jungle</p>
+            <p>Mathaios Kapsalos</p>
+            <a href="mat.html">
+                <p><button>View Profile</button></p>
+            </a>
 
 
         </div>
-        <!--John image-->
-        <div style="left:-29%; top:-70%;" class="imgcontainer ">
-            <a href="john.html"><img src="HTML/me.JPG" alt="Giannis" class="img1"></a>
+        <div class="card" style="margin-left:75px;">
+            <img src="HTML/antonis.jpg" alt="Antonis" style="width:55%;" class="imgcard">
+            <h3>Ωραια <br> <br></h3>
+            <p class="title">Mid</p>
+            <p>Antonios Parlapanis</p>
+            <a href="antonis.html">
+                    <p><button>View Profile</button></p>
+                </a>
+        </div>
+        <div class="card cardsetbot" style="margin-left:75px;">
+            <img src="HTML/ntiri.jpg" alt="Ntiri" style="width:55%;" class="imgcard">
+            <h3 style="font-size:165%">Magaiver007 <br> <br></h3>
+            <p class="title">Mid</p>
+            <p>Nikolaos Mpousis</p>
+            <a href="ntiri.html">
+                <p><button>View Profile</button></p>
+            </a>
+        </div>
+        <div class="card cardsetbot" style="margin-left: 50px;">
+                <img src="HTML/jason.jpg" alt="jason" style="width:55%;" class="imgcard">
+                <h3 style="font-size:165%;">The Untamable</h3>
+                <p class="title">Support</p>
+                <p>Jason Pavlakis</p>
+                <a href="jayson.html">
+                        <p><button>View Profile</button></p>
+                    </a>
+            </div>
+        <div class="card cardsetbot" style="position:relative; left:493px; top: 13.9%;">
+            <img src="HTML/giannos.jpg" alt="jason" style="width:55%;" class="imgcard">
+            <h3 style="font-size:165%;">Captain<br>Giannos</h3>
+            <p class="title">AD Carry</p>
+            <p>Ioannis Charalampous</p>
+            <a href="giannos.html">
+                    <p><button>View Profile</button></p>
+                </a>
+        </div>
+        <div class="background-img">
+            <!--jason image-->
+            <div style="left:16%; top:79%;" class="imgcontainer">
+                <a href="jayson.html"><img src="HTML/jason.jpg" alt="jason" class="img1"></a>
+
+            </div>
+
+            <!-- Giannos image-->
+            <div style="left:30%; top:50%;" class="imgcontainer">
+                <a href="giannos.html"> <img src="HTML/giannos.jpg" alt="giannos" class="img1"></a>
+
+            </div>
+
+            <!--Antonis image-->
+            <div style="left:-5%; top:8%;" class="imgcontainer">
+                <a href="antonis.html"><img src="HTML/antonis.jpg" alt="Antonis" class="img1"></a>
+
+            </div>
+
+            <!--Mpousis image-->
+            <div style="left:7%; top:-8.1%;" class="imgcontainer">
+                <a href="ntiri.html"><img src="HTML/ntiri.JPG" alt="Ntiri" class="img1"></a>
+
+            </div>
+
+            <!--Mat image-->
+            <div style="left:-20%; top:-20%;" class="imgcontainer">
+                <a href="mat.html"><img src="HTML/mat.JPG" alt="Mat" class="img1"></a>
+
+
+            </div>
+            <!--John image-->
+            <div style="left:-29%; top:-70%;" class="imgcontainer ">
+                <a href="john.html"><img src="HTML/me.JPG" alt="Giannis" class="img1"></a>
+            </div>
 
         </div>
     </div>
+    
+
+
+
+
     <footer>
-        
+
     </footer>
 
 
